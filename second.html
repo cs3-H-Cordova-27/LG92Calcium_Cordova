@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+		<meta name="description" content="FA2">
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="author" content="Highness R. Cordova">
+		<meta name="viewport" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Second Page</title>
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'> 
+	</head>
+	<body>
+		<center>
+		<h1 class="title"> Second Page </h1>
+		<div>
+			<img id="mainImage" src="missussob.png" alt="Original Image" style="border: 5px solid black">
+		</div>
+		<div>
+			<button onclick="changeImage()" style="border: 5px solid black">Change Image</button>
+			<button onclick="revertImage()" style="border: 5px solid black">Revert to Original</button>
+		</div>
+	</body>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			padding: 10px;
+			margin: 0;
+			background-image: url("bg.jpg");
+			background-repeat: no-repeat;
+		}
+		
+		.title{
+			font-size: 80px;
+			max-width: 600px;
+			margin: auto;
+			color: black;
+			font-family:'Pacifico';
+			text-align: center;
+			font-weight: bold;
+		}
+		
+		div {
+			margin-top: 20px;
+			text-align: center;
+		}
+		
+		button {
+			padding: 10px 20px;
+			margin: 0 10px;
+			cursor: pointer;
+			background-color: #a9def5;
+			border-radius: 6px;
+			cursor: pointer;
+		}
+		button:hover {
+			color: white;
+			background: #9ac2e3;
+		}
+	</style>
+	<script>
+		function changeImage() {
+			document.getElementById("mainImage").src = "misshim.jpg";
+		}
+
+		function revertImage() {
+			document.getElementById("mainImage").src = "missussob.png";
+		}
+	</script>
+</html>
